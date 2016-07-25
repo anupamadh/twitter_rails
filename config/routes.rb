@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
+  # resources :posts
   root 'static_pages#home' #controller#method
   resources :users
-
+  resources :posts
   get '/home', to:'static_pages#home'
   get '/about', to:'static_pages#about'
   get '/help', to:'static_pages#help'
